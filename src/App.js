@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
+import { createStore } from 'redux'
+import axios from 'axios'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class Counter extends React.Component {
+  increment = () => {
+
+  }
+
+  decrement = ()=> {
+
+  }
+
+  alterarTitulo =()=>{
+
+  }
+  render(){
+    return(
+      <div className='App'>
+        <button onClick={this.alterarTitulo}>Titulo</button>
+        <button onClick={this.increment}>mas</button>
+        <button onClick={this.decrement}>menos</button>
+        <h2>Tilulo</h2>
+        <h2>10</h2>
+      </div>
+    )
+  }
 }
 
-export default App;
+export default Counter;
